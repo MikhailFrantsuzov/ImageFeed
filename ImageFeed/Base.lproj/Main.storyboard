@@ -79,7 +79,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4g1-cs-EDy"/>
-                        <color key="backgroundColor" red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="YP Black"/>
                         <constraints>
                             <constraint firstItem="ZBD-w9-G54" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="AAg-d3-uJ8"/>
                             <constraint firstAttribute="trailing" secondItem="ZBD-w9-G54" secondAttribute="trailing" id="J34-9O-HzA"/>
@@ -105,68 +105,10 @@
                     <view key="view" contentMode="scaleToFill" id="FGT-TU-fyW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d51-ny-fla" userLabel="Username Label">
-                                <rect key="frame" x="16" y="158" width="382" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73C-ew-Yn4" userLabel="Description Label">
-                                <rect key="frame" x="16" y="218.5" width="382" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-hZ-KRh" userLabel="Exit Button">
-                                <rect key="frame" x="374" y="103" width="24" height="24"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="exit_button"/>
-                                <connections>
-                                    <action selector="didTapExitButton" destination="S45-D7-aDt" eventType="touchUpInside" id="1qX-C6-UeQ"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-fy-F1y">
-                                <rect key="frame" x="16" y="80" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="hHc-fW-nW7"/>
-                                    <constraint firstAttribute="height" constant="70" id="vC0-35-fYb"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxP-Ip-jY2" userLabel="Login Label">
-                                <rect key="frame" x="16" y="190" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Czx-u3-vdY"/>
-                        <color key="backgroundColor" red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="fOa-hZ-KRh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vj4-fy-F1y" secondAttribute="trailing" id="1LU-6j-jKP"/>
-                            <constraint firstItem="vj4-fy-F1y" firstAttribute="leading" secondItem="Czx-u3-vdY" secondAttribute="leading" constant="16" id="1Lv-Vs-jl0"/>
-                            <constraint firstItem="73C-ew-Yn4" firstAttribute="leading" secondItem="d51-ny-fla" secondAttribute="leading" id="Q9i-3a-2RV"/>
-                            <constraint firstItem="fxP-Ip-jY2" firstAttribute="trailing" secondItem="d51-ny-fla" secondAttribute="trailing" id="VqY-FW-ta0"/>
-                            <constraint firstItem="Czx-u3-vdY" firstAttribute="trailing" secondItem="d51-ny-fla" secondAttribute="trailing" constant="16" id="bGY-lh-xak"/>
-                            <constraint firstItem="73C-ew-Yn4" firstAttribute="top" secondItem="fxP-Ip-jY2" secondAttribute="bottom" constant="8" id="fUm-J8-J5m"/>
-                            <constraint firstItem="73C-ew-Yn4" firstAttribute="trailing" secondItem="d51-ny-fla" secondAttribute="trailing" id="gcf-nR-JHC"/>
-                            <constraint firstItem="fxP-Ip-jY2" firstAttribute="top" secondItem="d51-ny-fla" secondAttribute="bottom" constant="8" id="iBN-ZX-Yp1"/>
-                            <constraint firstItem="vj4-fy-F1y" firstAttribute="top" secondItem="Czx-u3-vdY" secondAttribute="top" constant="32" id="kBz-0M-Hcz"/>
-                            <constraint firstItem="d51-ny-fla" firstAttribute="leading" secondItem="vj4-fy-F1y" secondAttribute="leading" id="lAa-kf-NIb"/>
-                            <constraint firstItem="Czx-u3-vdY" firstAttribute="trailing" secondItem="fOa-hZ-KRh" secondAttribute="trailing" constant="16" id="laf-QL-EC0"/>
-                            <constraint firstItem="fOa-hZ-KRh" firstAttribute="top" secondItem="Czx-u3-vdY" secondAttribute="top" constant="55" id="llL-zI-MYD"/>
-                            <constraint firstItem="fxP-Ip-jY2" firstAttribute="leading" secondItem="d51-ny-fla" secondAttribute="leading" id="tgv-lp-KT8"/>
-                            <constraint firstItem="d51-ny-fla" firstAttribute="top" secondItem="vj4-fy-F1y" secondAttribute="bottom" constant="8" id="zBk-Fs-W9L"/>
-                        </constraints>
+                        <color key="backgroundColor" name="YP Black"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="G3j-ks-dj2"/>
-                    <connections>
-                        <outlet property="avatarImageView" destination="vj4-fy-F1y" id="Ln1-O5-2oK"/>
-                        <outlet property="descriptionLabel" destination="73C-ew-Yn4" id="e9R-Us-jYH"/>
-                        <outlet property="exitButton" destination="fOa-hZ-KRh" id="MEj-cj-4xr"/>
-                        <outlet property="loginNameLabel" destination="fxP-Ip-jY2" id="T8h-OL-nSq"/>
-                        <outlet property="nameLabel" destination="d51-ny-fla" id="mtW-CB-eWT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLj-3S-dos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +124,7 @@
                         <color key="backgroundColor" name="YP Background"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="YP Black"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
@@ -234,13 +176,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17n-0S-cgy" userLabel="Button Share">
-                                <rect key="frame" x="181.5" y="809" width="51" height="51"/>
+                                <rect key="frame" x="182" y="810" width="50" height="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="share_button"/>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="DLw-Bd-fel" eventType="touchUpInside" id="xyT-oO-TNU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eFh-8R-UDl"/>
-                        <color key="backgroundColor" red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="YP Black"/>
                         <constraints>
                             <constraint firstItem="eFh-8R-UDl" firstAttribute="bottom" secondItem="17n-0S-cgy" secondAttribute="bottom" constant="36" id="11j-h0-y1P"/>
                             <constraint firstItem="17n-0S-cgy" firstAttribute="centerX" secondItem="eFh-8R-UDl" secondAttribute="centerX" id="36o-vj-8Qr"/>
@@ -265,15 +210,16 @@
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
-        <image name="avatar" width="70" height="70"/>
-        <image name="exit_button" width="24" height="24"/>
         <image name="like_button_on" width="42" height="42"/>
         <image name="nav_back_button_white" width="24" height="24"/>
-        <image name="share_button" width="51" height="51"/>
-        <image name="tab_editorial_active" width="15" height="15"/>
-        <image name="tab_profile_active" width="30" height="30"/>
+        <image name="share_button" width="50" height="50"/>
+        <image name="tab_editorial_active" width="75" height="49"/>
+        <image name="tab_profile_active" width="75" height="49"/>
         <namedColor name="YP Background">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YP Black">
+            <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
